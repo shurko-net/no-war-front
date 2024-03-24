@@ -1,7 +1,7 @@
 import './App.scss';
 
 function App() {
-  return <>Hello react Vite</>;
+  return <></>;
 }
 
 export default App;
