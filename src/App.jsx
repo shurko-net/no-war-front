@@ -1,9 +1,15 @@
 import './App.scss';
-import { useTranslation } from 'react-i18next';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
-  const { t } = useTranslation();
-  return <>{t('helloWorld')}</>;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      {/* <Route path="about" element={<About />} /> */}
+      {/* <Route path="contact" element={<Contact />} /> */}
+    </Routes>
+  );
 }
 
 export default App;
