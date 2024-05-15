@@ -1,0 +1,422 @@
+.get-started {
+  margin-top: 6.0625rem;
+  &__container {
+    max-width: 81.25rem;
+    margin: 0px auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 6.25rem;
+    margin-bottom: 6.25rem;
+  }
+
+  &__block-text {
+    min-width: 40rem;
+    .block-text {
+  
+      &__title {
+        font-size:4.375rem;
+        font-weight: 600;
+        line-height: 5.1875rem;
+        margin-bottom: 2.25rem;
+        text-align: left;
+        word-spacing: 1px;
+      }
+    
+      &__text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.825rem;
+        max-width: 459px;
+        word-spacing: 2px;
+        margin-bottom: 3.375rem;
+      }
+    
+      &__buttons {
+        display: flex;
+        gap: 1.25rem;
+        .button {
+          padding: 20px 30px 20px 30px;
+          text-decoration: none;
+          text-align: center;
+          font-weight: 500;
+          font-size: 1.25rem;
+          line-height: 1.48125rem;
+          &_black {
+            background-color: #212020;
+            color: #FFFFFF;
+            min-width: 13.875rem;
+          }
+        
+          &_green {
+            background-color:#B7E966;
+            min-width: 13.875rem;
+            color: #212020;
+          }
+        }
+      }
+    }
+    
+    
+  }
+
+  &__images {
+    width: 100%;
+    height: 461px;
+    position: relative;
+    
+    .images {
+
+      &__rectangle {
+        position: absolute;
+        bottom: 109px;
+        width: 240px;
+        height: 186px;
+        background-color: #B7E966;
+        right: 200px;
+        transition: all 1s ease 0.4s!important;
+        transform: scale(0);
+        transform-origin: top right;
+        &_active {
+          transform: scale(1);
+        }
+      }
+    
+      &__first {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        transition: all 0.8s ease 0s!important;
+        transform: scale(0);
+        transform-origin: top right;
+        &_active {
+          transform: scale(1);
+        }
+        
+      }
+    
+      &__second {
+        position: absolute;
+        bottom: 0;
+        right: 12.6875rem;
+        z-index: 1;
+        transition: all 0.8s ease 0.2s!important;
+        transform: scale(0);
+        transform-origin: bottom left;
+        &_active {
+          transform: scale(1);
+        }
+      }
+    
+      &__third {
+        position: absolute;
+        top: 68px;
+        transition: all 0.8s ease 0.8s!important;
+        transform: scale(0);
+        transform-origin: bottom right;
+        &_active {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+	&__info {
+    margin-bottom: 6.25rem;
+    .info {
+
+      &__navigation {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 16px;
+      }
+  
+      &__left-button {
+        background-image: url(../../../assets/icons/navigation-arrow.svg);
+        width:29px;
+        height: 21px;
+        margin-right: 26px;
+        &_enabled {
+          filter: invert(100%);
+          ;
+        }
+      }
+  
+      &__right-button {
+        transform: rotate(180deg);
+        background-image: url(../../../assets/icons/navigation-arrow.svg);
+        width:29px;
+        height: 21px;
+        margin-right: 13px;
+        &_enabled {
+          filter: invert(100%);
+          ;
+        }
+      }
+
+      &__list {
+        display: flex;
+        gap: 1.25rem;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth!important;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    }
+  }
+
+}
+
+.about-fund {
+  background-color: #212020;
+  padding-top: 14.6875rem;
+  padding-bottom: 230px;
+  &__container {
+    max-width: 81.25rem;
+    margin: 0px auto;
+   
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  &__text-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 22px;
+    max-width: 1180px;
+    
+    &::before {
+      width: 25.12px;
+      height: 21.33px;
+      content: url(../../../assets/icons/opening-quotes.svg);
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+    &::after {
+      width: 25.12px;
+      height: 21.33px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: url(../../../assets/icons/closing-quotes.svg);
+    }
+    .text-box {
+      &__text {
+        max-width: 67.5rem;
+        text-align: center;
+        font-size: 34px;
+        font-weight: 500;
+        color: #FFFFFF;
+        .text-green {
+          color: #B7E966;
+        }
+      }
+    }
+  }
+}
+
+.our-capabilities {
+
+  &__container {
+    max-width: 81.25rem;
+    margin: 0px auto;
+    padding-top: 11.25rem;
+    padding-bottom: 11.25rem;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 800;
+    line-height: 1.24;
+    margin-bottom: 5rem;
+  }
+
+  &__body {
+    margin-bottom: 1.875rem;
+    .body {
+
+      &__line {
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+        width: 100%;
+        height: 0px;
+        border-bottom: solid 1px #B0B0B0;
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.185;
+    padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+    background-color: #212020;
+    color: #FFFFFF;
+    border-radius: 2px;
+  }
+}
+
+.help-info {
+  background-color: #212020;
+  &__container {
+    max-width: 81.25rem;
+    margin: 0px auto;
+    padding: 9.375rem 0;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__fees {
+    min-width: 660px;
+    padding: 88px 0px;
+    border-right: 1px solid #FFFFFF;
+    .fees {
+
+      &__content:nth-child(1) {
+        margin-bottom: 70px;
+      }
+
+      &__content { 
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 1.46;
+          color: #FFFFFF;
+        }
+      }
+    
+      &__number {
+        display: block;
+        font-size: 110px;
+        font-weight: 600;
+        line-height: 0.75;
+        color: #B7E966;
+        margin-bottom: 1.625rem;
+      }
+    }
+  }
+
+  &__we-believe {
+    padding: 7.25rem 0 0 3.125rem;
+    .we-believe {
+
+      &__content {
+        color: #FFFFFF;
+        max-width: 33.125rem;
+      }
+    
+      &__title {
+        font-size: 2.25rem;
+        font-weight: 800;
+        line-height: 1.36;
+        margin-bottom: 2.25rem;
+      }
+    
+      &__text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.46;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.urgent-meetings {
+
+  &__container {
+    max-width: 81.25rem;
+    margin: 0px auto;
+    padding: 180px 0px 218px 0px;
+  }
+
+  &__body {
+
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.24;
+    text-align: center;
+  }
+
+  &__slider-panel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.875rem;
+    .slider-panel {
+
+      &__text {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.185;
+        flex: 1 1 auto;
+      }
+    
+      &__left-button {
+        background-image: url(/src/assets/icons/navigation-arrow.svg);
+        width: 29px;
+        height: 21px;
+        margin-right: 26px;
+      }
+    
+      &__right-button {
+        transform: rotate(180deg);
+        background-image: url(/src/assets/icons/navigation-arrow.svg);
+        width: 29px;
+        height: 21px;
+      }
+    }
+  }
+
+  &__collections {
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .collections {
+
+      &__futured-card {
+      }
+    
+      &__futured-right-list {
+        display: grid;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        align-content: flex-start;
+        gap: 1.25rem;
+      }
+    }
+  }
+}
+
+
+

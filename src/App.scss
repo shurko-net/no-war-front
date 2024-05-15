@@ -1,2 +1,8 @@
-@import 'nullstyle.scss';
+@import 'assets/scss/nullstyle.scss';
 
+.wrapper {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+}

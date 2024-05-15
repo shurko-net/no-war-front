@@ -1,0 +1,49 @@
+.capabilities-card {
+  display: flex;
+  gap: 4.6875rem;
+
+  &__block-text {
+    display: flex;
+    flex-direction: column;
+    .block-text {
+
+      &__number {
+        font-size: 1.25rem;
+        background-color: #B7E966;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.25rem;
+      }
+    
+      &__title {
+        font-size: 2.25rem;
+        font-weight: 800;
+        margin-bottom: 10rem;
+        line-height: 1.389;
+      }
+    
+      &__text {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    flex: 0 0 49.2307692%;;
+    img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top:0;
+      left: 0;
+    }
+  }
+}
+
